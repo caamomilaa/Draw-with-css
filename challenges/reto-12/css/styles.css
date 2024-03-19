@@ -1,0 +1,26 @@
+/* 
+IMPORTANTE: USAR UN SOLO DIV
+Colors:
+  Background: #6592CF
+  Dark blue: #243D83
+*/
+
+.box {
+  background-color: #6592cf;
+}
+
+.square {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #243d83;
+}
+.square::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  left: 25px;
+  bottom: 25px;
+}
