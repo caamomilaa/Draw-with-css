@@ -4,6 +4,7 @@ Colors:
   Background: #0b2429
   Left circle: #8c3d62
   Right circle: #ff8582
+  HECHO
 */
 
 .box {
@@ -11,4 +12,34 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 154px;
+  height: 154px;
+  border-radius: 100%;
+  background-color: #030026;
+  box-shadow: 100px 0px #8c3d62 inset;
+  top: 72px;
+  left: 69px;
 }
+.shape::before {
+  position: absolute;
+  content: "";
+  width: 154px;
+  height: 154px;
+  border-radius: 100%;
+  background-color: #030026;
+  box-shadow: -100px 0px #ff8582 inset;
+  left: 100px;
+}
+
+/* .shape::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 70px;
+  background-color: #030026;
+  border-radius: 100px 0px 100px 0px;
+  top: 30px;
+  left: 100px;
+  rotate: 150deg;
+} */

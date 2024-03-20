@@ -11,4 +11,31 @@ Colors:
 }
 
 .circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #fff1c0;
+  border-radius: 100%;
+  top: 50px;
+  left: 100px;
+  overflow: hidden;
+}
+.circle::before {
+  position: absolute;
+  content: "";
+  width: 57px;
+  height: 57px;
+  background-color: #ff5f54;
+  top: 145px;
+  rotate: 45deg;
+}
+.circle::after {
+  position: absolute;
+  content: "";
+  width: 155px;
+  height: 155px;
+  background-color: #ff5f54;
+  top: 90px;
+  left: 65px;
+  rotate: 45deg;
 }

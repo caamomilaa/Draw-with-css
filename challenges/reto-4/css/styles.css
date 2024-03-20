@@ -5,6 +5,7 @@ Colors:
   Circle:#3278ff
   Rectangle:#ffe58e
   Union: #79d6ff
+  HECHO*****
 */
 
 .box {
@@ -17,46 +18,25 @@ Colors:
   position: relative;
   width: 75px;
   height: 125px;
-  background-color:#79d6ff;
+  background-color: #ffe58e;
   margin-top: 120px;
   margin-left: 120px;
-  overflow: hidden;
 }
-.shape::before{
+.shape::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  background-color:#3278ff ;
+  background-color: #3278ff;
   margin-top: -70px;
 }
-
-
-shape {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 100px;
-  background-color:#3278ff ;
-  margin-top: 50px;
-  margin-left: 120px;
-  overflow: hidden;
-}
-shape::before{
+.shape::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 75px;
-  height: 125px;
-  background-color:#ffe58e;
-  top: 50%;
-}
-shape::after{
-  position: absolute;
-  content: '';
-  width: 75px;
-  height: 125px;
-  background-color:#79d6ff;
-  top: 50%;
- 
+  height: 75px;
+  background-color: #79d6ff;
+  border-radius: 0px 0px 0px 100px;
+  margin-top: 10px;
 }

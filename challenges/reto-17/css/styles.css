@@ -4,6 +4,7 @@ Colors:
   Background:#222730
   Blue: #4CAAB3
   Grey: #393E46
+  HECHO
 */
 
 .box {
@@ -11,4 +12,30 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 500px;
+  height: 150px;
+  background-color: #4caab3;
+  top: 75px;
+}
+.shape::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #393e46;
+  top: 50px;
+  left: 175px;
+}
+
+.shape::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #4caab3;
+  rotate: 45deg;
+  left: 125px;
+  box-shadow: 0 0 0 50px #222730;
 }

@@ -4,6 +4,7 @@ Colors:
   Background:#62306D
   Orange: #E38F66
   Yellow: #F7EC7D
+  HECHO
 */
 
 .box {
@@ -11,4 +12,33 @@ Colors:
 }
 
 .ticket {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  background-color: #f7ec7d;
+  top: 100px;
+  left: 100px;
+  box-shadow: 60px 0px #e38f66;
+}
+.ticket::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #62306d;
+  top: -29px;
+  left: -29px;
+  box-shadow: 0px 108px #62306d, 209px 0px #62306d, 209px 108px #62306d;
+}
+.ticket::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #62306d;
+  top: -10px;
+  left: 130px;
+  box-shadow: 0px 100px #62306d;
 }

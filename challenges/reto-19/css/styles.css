@@ -4,6 +4,7 @@ Colors:
   Background: #AA445F
   Yellow: #F7EC7D
   Orange: #E38F66
+  HECHO
 */
 
 .box {
@@ -11,4 +12,20 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  background-color: #f7ec7d;
+  border-radius: 100px 0 0 100px;
+  top: 50px;
+  left: 75px;
+}
+.shape::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 200px;
+  background-color: #e38f66;
+  border-radius: 0 100px 100px 0;
+  left: 150px;
 }
