@@ -14,4 +14,49 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 75px;
+  height: 125px;
+  background-color:#79d6ff;
+  margin-top: 120px;
+  margin-left: 120px;
+  overflow: hidden;
+}
+.shape::before{
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color:#3278ff ;
+  margin-top: -70px;
+}
+
+
+shape {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color:#3278ff ;
+  margin-top: 50px;
+  margin-left: 120px;
+  overflow: hidden;
+}
+shape::before{
+  position: absolute;
+  content: '';
+  width: 75px;
+  height: 125px;
+  background-color:#ffe58e;
+  top: 50%;
+}
+shape::after{
+  position: absolute;
+  content: '';
+  width: 75px;
+  height: 125px;
+  background-color:#79d6ff;
+  top: 50%;
+ 
 }

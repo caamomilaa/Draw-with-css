@@ -3,6 +3,7 @@ IMPORTANTE: USAR UN SOLO DIV
 Colors:
   Background: #6592CF
   Dark blue: #243D83
+  *****HECHO*****
 */
 
 .box {
@@ -11,16 +12,29 @@ Colors:
 
 .square {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   background-color: #243d83;
+  margin-inline: auto; 
+  margin-top: 25px;
 }
-.square::after {
+.square::before {
   content: "";
   position: absolute;
   width: 150px;
   height: 150px;
-  background-color: #fff;
-  left: 25px;
-  bottom: 25px;
+  background-color: #6592cf;
+  left: 50px;
+  bottom: 50px;
+  rotate: 15deg;
+}
+.square::after {
+  content: '';
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  background-color: #243d83;
+  left: 88px;
+  bottom: 88px;
+  rotate: 30deg;
 }
