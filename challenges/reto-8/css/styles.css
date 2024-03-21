@@ -4,6 +4,7 @@ Colors:
   Background: #0b2429
   Leaf yellow: #f3ac3c
   Leaf green: #998235
+  HECHO***
 */
 
 .box {
@@ -11,4 +12,22 @@ Colors:
 }
 
 .leaf {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-color: #f3ac3c;
+  top: 30px;
+  left: 200px;
+}
+.leaf::before{
+  position: absolute;
+  content: '';
+  width: 120px;
+  height: 120px;
+  border-radius: 100px 0 100px 100px;
+  background-color: #f3ac3c;
+  top: 120px;
+  left: -120px;
+  box-shadow: 60px -60px #998235;
 }

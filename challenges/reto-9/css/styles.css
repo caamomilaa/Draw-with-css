@@ -5,6 +5,7 @@ Colors:
   Leaf yellow: #f3ac3c
   Leaf green: #998235
   Leaf dark green: #1a4341
+  HECHO***
 */
 
 .box {
@@ -12,4 +13,12 @@ Colors:
 }
 
 .leaf {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 70% 0;
+  background-color: #f3ac3c;
+  top: 75px;
+  left: 175px;
+  box-shadow: -50px 0 #998235, -100px 0 #1a4341;
 }

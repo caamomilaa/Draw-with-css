@@ -3,6 +3,7 @@ IMPORTANTE: USAR UN SOLO DIV
 Colors:
   Background: #62306d
   Yellow: #f7ec7d
+  HECHO***
 */
 
 .box {
@@ -10,4 +11,23 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #f7ec7d;
+  top: 50px;
+  left: 150px;
+  border-radius: 100% 100% 0 0;
+}
+.shape::before{
+  position:absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: #f7ec7d;
+  border-radius: 100% 100% 0 0;
+  rotate: 180deg;
+  top: 100px;
+  left: 100px;
+  box-shadow: 200px 0 #f7ec7d;
 }

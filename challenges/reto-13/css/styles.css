@@ -10,4 +10,22 @@ Colors:
 }
 
 .circle {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  background-color: #ca0;
+  border-radius: 100%;
+  top: 80px;
+  left: 130px;
+}
+.circle::before{
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 25px;
+  border-radius: 100% 100% 0 0;
+  background-color: red;
+  top: 40px;
+  left: 143px;
+  box-shadow: 0 -10px 0 10px #ca0;
 }
